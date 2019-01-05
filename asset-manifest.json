@@ -1,7 +1,7 @@
 {
   "main.css": "/lvd-manager-gui/static/css/main.f82625d3.chunk.css",
-  "main.js": "/lvd-manager-gui/static/js/main.932bf1e6.chunk.js",
-  "main.js.map": "/lvd-manager-gui/static/js/main.932bf1e6.chunk.js.map",
+  "main.js": "/lvd-manager-gui/static/js/main.52c1ed6c.chunk.js",
+  "main.js.map": "/lvd-manager-gui/static/js/main.52c1ed6c.chunk.js.map",
   "static/css/1.c2e2649e.chunk.css": "/lvd-manager-gui/static/css/1.c2e2649e.chunk.css",
   "static/js/1.60f75387.chunk.js": "/lvd-manager-gui/static/js/1.60f75387.chunk.js",
   "static/js/1.60f75387.chunk.js.map": "/lvd-manager-gui/static/js/1.60f75387.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.f82625d3.chunk.css.map": "/lvd-manager-gui/static/css/main.f82625d3.chunk.css.map",
   "static/css/1.c2e2649e.chunk.css.map": "/lvd-manager-gui/static/css/1.c2e2649e.chunk.css.map",
   "index.html": "/lvd-manager-gui/index.html",
-  "precache-manifest.ad0a68e3793fd61fc046a66832e1c3e7.js": "/lvd-manager-gui/precache-manifest.ad0a68e3793fd61fc046a66832e1c3e7.js",
+  "precache-manifest.58f6ad017e5f4da25b754b3af42325ae.js": "/lvd-manager-gui/precache-manifest.58f6ad017e5f4da25b754b3af42325ae.js",
   "service-worker.js": "/lvd-manager-gui/service-worker.js"
 }
