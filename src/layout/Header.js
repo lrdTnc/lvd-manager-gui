@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
 import {Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink} from 'reactstrap';
  class Header extends Component {
    toggle() {
@@ -21,13 +22,13 @@ import {Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink} fro
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href='/stock'>Stoc</NavLink>
+                <NavLink><Link to='/stock'>Stoc</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/orders">Comenzi</NavLink>
+                <NavLink><Link to='/orders'>Comenzi</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/statistics">Statistici</NavLink>
+                <NavLink><Link to='/statistics'>Statistici</Link></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
