@@ -10,7 +10,7 @@ import StatisticsPage from './pages/StatisticsPage';
 class App extends Component {
   render() {
     return (
-      <div class="lavado-app">
+      <div className="lavado-app">
         <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Header/>

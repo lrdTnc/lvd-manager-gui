@@ -18,6 +18,9 @@ class StockPage extends Component {
     render() {
         return (
             <div>
+                <div className={this.state.stocks.length === 0 ? "overlay show" : "overlay hide"} >
+                    <div className="spinner-border m-5" role="status"> </div>
+                </div>
                 <br/>
                 <div className="container stockPage">
                     <h2>Stocul Curent:

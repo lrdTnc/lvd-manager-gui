@@ -5,7 +5,6 @@ class HomePage extends Component {
         return (
             <div class="container flex-column-center">
                 <h1>Lvd Manager</h1>
-
                 <img src="https://media.giphy.com/media/zk3zkHN6U6TAs/giphy.gif"/>
             </div>
         )
