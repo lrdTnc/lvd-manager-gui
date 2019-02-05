@@ -5,18 +5,19 @@ import Header from './layout/Header';
 import HomePage from './pages/HomePage';
 import OrderPage from './pages/OrderPage';
 import StockPage from './pages/StockPage';
-
+import StatisticsPage from './pages/StatisticsPage';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div class="lavado-app">
         <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Header/>
             <Route exact path="/" component={HomePage}/>
-            <Route exact path="/stock"  component={StockPage}/>
-            <Route exact path="/orders" componen={OrderPage}/>
+            <Route path="/stock"  component={StockPage}/>
+            <Route path="/orders" component={OrderPage}/>
+            <Route path="/statistics" component={StatisticsPage}/>
           </div>
         </Router>
       </div>

@@ -5,12 +5,20 @@
     margin-bottom: 5px;
 
 }
-
+@media all and (max-width: 575px)  {
+    .stockItemRow .buttonsContainer {
+        position:absolute;
+        top: 1px;
+        right: 1px;
+    }
+}
 .stockItemRow .buttonsContainer button:first-child{
   margin-right: 2px;
 }
-.stockItemRow .buttonsContainer {
-  position:absolute;
-  top: 32px;
-  right: 5px;
+@media all and (min-width: 576px) {
+    .stockItemRow .buttonsContainer {
+        position: absolute;
+        top: 28px;
+        right: 5px;
+    }
 }

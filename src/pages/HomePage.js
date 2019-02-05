@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
-
+import './HomePage.css';
 class HomePage extends Component {
-  render() {
-    return(
-      <div>
-      <h1>Pagina principala</h1>
-      <h2>Inca nu stiu ce sa pun aici. Momentan e implementat doar pagina de stocuri</h2>
-      </div>
-  )
-  }
+    render() {
+        return (
+            <div class="container flex-column-center">
+                <h1>Lvd Manager</h1>
+
+                <img src="https://media.giphy.com/media/zk3zkHN6U6TAs/giphy.gif"/>
+            </div>
+        )
+    }
 }
 
 export default HomePage;
