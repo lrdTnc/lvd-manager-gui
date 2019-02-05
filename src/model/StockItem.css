@@ -2,19 +2,15 @@
     padding-right: 10px;
 }
 .stockItemRow > div {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 
 }
-@media (max-width: 720px) query {
-  .stockItemRow .buttonsContainer {
-      top: 5px;
-  }
-}
+
 .stockItemRow .buttonsContainer button:first-child{
   margin-right: 2px;
 }
 .stockItemRow .buttonsContainer {
   position:absolute;
-  top: 33px;
+  top: 32px;
   right: 5px;
 }
