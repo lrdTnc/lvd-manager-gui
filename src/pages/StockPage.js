@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import glyphicons from 'glyphicons';
 import StockItem from '../model/StockItem';
-import './StockPage.css';
 import StockService from '../services/StockService';
 
 class StockPage extends Component {
-    state = {stocks: []};
+    state = {stocks: [], loading: false};
 
     constructor() {
         super();
@@ -18,7 +17,7 @@ class StockPage extends Component {
     render() {
         return (
             <div>
-                <div className={this.state.stocks.length === 0 ? "overlay show" : "overlay hide"} >
+                <div className={this.state.loading ? "overlay show" : "overlay hide"} >
                     <div className="spinner-border m-5" role="status"> </div>
                 </div>
                 <br/>
@@ -32,7 +31,7 @@ class StockPage extends Component {
                         {
                            this.state.stocks.map(stock => (
                                 <li className="list-group-item" key={stock.id ? stock.id +"" : "0"} order={stock.id ? stock.id +"" : "0"}>
-                                    <StockItem service={this.service} obj={stock} handleEmptyTarget={this.removeEmptyStock}/>
+                                    <StockItem service={this.service} obj={stock} updateLoading={this.updateLoading} handleEmptyTarget={this.removeEmptyStock}/>
                                 </li>
                             ))
                         }
@@ -48,7 +47,11 @@ class StockPage extends Component {
     }
 
     async getStocks() {
-        this.setState({stocks: await this.service.getStocks()});
+        this.setState({stocks: await this.service.getStocks(), loading: false});
+    }
+
+    updateLoading(loading) {
+        this.setState({stocks: this.state.stocks, loading: loading});
     }
 
     addNewStock() {

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import "./StockItem.css";
 
 import glyphicons from 'glyphicons';
 
@@ -19,7 +18,9 @@ class StockItem extends Component {
     }
 
     async saveStock() {
+        this.updateLoading(true);
         this.setState({disabled: "disabled", target: await this.service.saveStock(this.state.target)});
+        this.updateLoading(false);
     }
 
     constructor(props) {
@@ -30,6 +31,7 @@ class StockItem extends Component {
         this.cancelChanges = this.cancelChanges.bind(this);
         this.initTarget = props.obj;
         this.service = props.service;
+        this.updateLoading = props.updateLoading;
         this.handleEmptyTarget = props.handleEmptyTarget;
         this.state.disabled = props.obj.id ? "disabled" : false;
         this.state.target = this.initTarget;
@@ -45,7 +47,7 @@ class StockItem extends Component {
 
     render() {
         return (
-            <div className="row stockItemRow">
+            <div className="row listItemRow">
                 <div className="col-xs-10 col-sm-10 col-md-11 col-lg-5">
                     <label>Produs</label>
                     <input className="form-control" onChange={this.handleChangeFn('productName')} disabled={this.state.disabled} type="text"
